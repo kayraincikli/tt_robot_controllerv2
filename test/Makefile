@@ -5,7 +5,8 @@
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v
+PROJECT_SOURCES = project.v autodrive.v config_rx.v data_tx.v Divider32bit.v get_8sensor_data.v i2c_master.v memory.v memory_controller.v motor_driver.v mpu6050_gyro_driver.v odometer.v pwm_generator.v robot_controller.v robot_top_module.v sr04_sensor_driver.v UART_RX.v
+
 
 ifneq ($(GATES),yes)
 
