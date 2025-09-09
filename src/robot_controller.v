@@ -194,8 +194,8 @@ always @(posedge clk or posedge reset) begin
         total_angle_prev  <= 12'd360;
         get_data_En       <= 1'b0;
         autodrive_en      <= 1'b0;
-        current_x         <= initial_position_x;
-        current_y         <= initial_position_y;
+        current_x         <= 0;
+        current_y         <= 0;
     end else if (robot_controller_en) begin
             current_x <= initial_position_x + c1m_d2x;
             current_y <= initial_position_y + c1m_d2y;
